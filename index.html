@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fmak Service</title>
+
+    <!--favicon-->
+    <link rel="icon" href="fmaklogo.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <!--SEO-->
+    <meta name="description" content="Η Νούμερο 1 επιλογή για service αυτοκινήτων από εξειδικευμένους επαγγελματίες με εγγύηση αποτελέσματος και άριστη εξυπηρέτηση δίπλα στο σταθμό μετρό." />
+
+    <meta name="keywords" content="σέρβις, service, auto, αυτοκινήτου, Αθήνα, Περιστέρι, κοντά, μετρό, metro, Athens, καλύτερο, εγγύηση, δωρεάν, έλεγχος, επαγγελματίες, διαγνωστικός, λάδια, φίλτρο, αμορτισέρ, μπαταρίες, αυτοκινήτου, φθηνά, τακάκια, φρένων, υαλοκαθαριστήρες, επισκευή, γρήγορα, κτεο,"
+    />
+</head>
+
+<body>
+    <header>
+
+        <nav>
+
+            <a href="javascript: scrollToForm();"><img class="logo" src="fmaklogo.png" alt="fmak"></a>
+
+
+            <div class="menu">
+                <ul id="btn">
+                    <li><a href="javascript: scrollToForm1();" class="hovereffect">SERVICE</a></li>
+                    <li><a href="javascript: scrollToForm2();" class="hovereffect">ΥΠΗΡΕΣΙΕΣ</a></li>
+                    <li><a href="javascript: scrollToForm3();" class="hovereffect">ΣΧΕΤΙΚΑ</a></li>
+                    <li><a href="javascript: scrollToForm4();" class="hovereffect">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <script>
+            function scrollToForm() {
+                document.querySelector('#home').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+
+            function scrollToForm1() {
+                document.querySelector('#service').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+
+            function scrollToForm2() {
+                document.querySelector('#ipiresies').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+
+            function scrollToForm3() {
+                document.querySelector('#sxetika').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+
+            function scrollToForm4() {
+                document.querySelector('#contact').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        </script>
+
+
+        <div class="slideshow-container" id="home">
+
+            <div class="mySlides fade">
+
+                <img src="img/7.jpg" alt="img">
+
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="img/10.jpg" alt="img">
+
+            </div>
+
+            <div class="mySlides fade">
+
+                <img src="img/5.jpg" alt="img">
+
+            </div>
+
+
+            <div class="heading">
+                <img src="img/fmaklogo.png" alt="FMAK" class="responsive scale-up-center">
+                <h1 class="fade-in">SERVICE & ΕΛΕΓΧΟΣ</h1>
+                <p class="fade-in">Η Νο1 ΕΠΙΛΟΓΗ ΓΙΑ ΤΟ ΟΧΗΜΑ ΣΑΣ</p>
+            </div>
+
+
+        </div>
+        <br>
+
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <!--carousel-->
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 7000); // Change image every 7 seconds
+            }
+        </script>
+
+        <!--moving navbar-->
+        <script type="text/javascript">
+            $(window).on("scroll", function() {
+                if ($(window).scrollTop()) {
+                    $('nav').addClass('white');
+                } else {
+                    $('nav').removeClass('white');
+                }
+            })
+        </script>
+    </header>
+
+    <!--pre service section-->
+    <div class="presectioncontainer">
+        <div class="box">
+            <div class="ribbon ribbon-top-right"><span>ΠΡΟΣΦΟΡΕΣ</span></div>
+            <div class="offerscontainer">
+                <div class="offers">
+                    <h4>title</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <h5>price</h5>
+                </div>
+
+                <div class="offers">
+                    <h4>title</h4>
+                    <p>Lorem ipsum dolor sit amet,Vero deleniti laudantium vel facilis labore possimus.</p>
+                    <h5>price</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--service section-->
+    <div class="service" id="service">
+        <div class="service-cont">
+            <h1>Για service καλέστε στο &nbsp; <span> 2105749060</span></h1>
+        </div>
+    </div>
+
+    <!-- Middle Section -->
+
+    <div class="preservicet centert">
+        <div class="pre-contentt">
+            <div class="icot">
+                <i class="fas fa-car"></i>
+                <h5>Ι.Χ.</h5>
+                <p>Αναλαμβάνουμε ΟΛΕΣ τις μάρκες Ι.Χ. οχημάτων ενώ διαθέτουμε ΕΞΕΙΔΙΚΕΥΣΗ σε οχήματα FORD</p>
+            </div>
+            <div class="icot">
+                <i class="fas fa-taxi"></i>
+                <h5>ΕΠΑΓΓΕΛΜΑΤΙΚΑ</h5>
+                <p>Αναλαμβάνουμε επαγγελματικά οχήματα FORD & FIAT</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ipiresies section-->
+    <div class="ipiresies" id="ipiresies">
+
+        <div class="ipiresies-txt">
+            <h2>Υπηρεσίες</h2>
+            <p>Με εμπειρία δεκαετιών στο χώρο του αυτοκινήτου, σας εγγυόμαστε για το αποτέλεσμα των εργασιών μας, πάντα με σεβασμό στον πελάτη και πάθος για την εργασία μας</p>
+        </div>
+
+
+
+        <div class="ipiresies-content">
+            <div class="item">
+                <i class="fal fa-monitor-heart-rate"></i>
+                <h4>Διαγνωστικός έλεγχος οχημάτων</h4>
+
+            </div>
+            <div class="item">
+                <i class="fal fa-file-medical-alt"></i>
+                <h4>Διαγνωστικός έλεγχος για οχήματα FORD με FORD IDS</h4>
+
+            </div>
+            <div class="item">
+                <i class="fal fa-wrench"></i>
+                <h4>Γενικό service ΙΧ</h4>
+
+            </div>
+            <div class="item">
+                <i class="fal fa-car"></i>
+                <h4>Service A/C με τεχνολογία ιονισμού</h4>
+
+            </div>
+            <div class="item">
+                <i class="fal fa-engine-warning"></i>
+                <h4>Αλλαγή Λαδιών</h4>
+
+            </div>
+            <div class="item">
+                <i class="fal fa-car-mechanic"></i>
+                <h4>Service Επαγγελματικών</h4>
+
+            </div>
+
+            <div class="item">
+                <i class="fal fa-wallet"></i>
+                <h4>Έως 6 Δόσεις </h4>
+
+            </div>
+
+
+        </div>
+        <div class="ipiresies-endtxt">
+            <p>Η <b style="color: black;">F-MAK SERVICE</b> σας παρέχει σε όλες τις εργασίες και τα ανταλλακτικά <b style="color: black;"> ένα (1) έτος εγγύηση </b></p>
+        </div>
+    </div>
+
+
+
+    <!--sxolia section-->
+    <div class="sxolia">
+        <h2>Σχόλια πελατών μας</h2>
+        <h3 class="wordCarousel"><span>Με μία λέξη: </span>
+            <div>
+                <ul class="flip3">
+                    <li>Επαγγελματισμός</li>
+                    <li>Αξιοπιστία</li>
+                    <li>Εξυπηρέτηση</li>
+                </ul>
+            </div>
+        </h3>
+    </div>
+
+    <!--sxetika section-->
+    <div class="sxetika " id="sxetika">
+        <img src="img/simees.jpg" alt="Fmak" id="sxetikaimg">
+
+        <div class="sxetika-txt">
+            <div class="sxetika-txt-content">
+                <h2>Ποιοι είμαστε</h2>
+                <p>Το συνεργείο αυτοκινήτων <span style="color: black;">F-MAK SERVICE</span> βρίσκεται στο Περιστέρι, λίγα μόλις μέτρα από τη στάση του <span style="color: black;">ΜΕΤΡΟ ΑΝΘΟΥΠΟΛΗΣ</span>.</p>
+                <p>Με εμπειρία δεκαετιών στο χώρο του αυτοκινήτου, μπορείτε να μας επισκεφθείτε για τον έλεγχο – συντήρηση του οχήματος σας και σας εγγυόμαστε για το αποτέλεσμα των εργασιών μας.</p>
+                <p>Ελάτε στο συνεργείο μας για έναν <span style="color: black;">ΔΩΡΕΑΝ</span> εποχιακό έλεγχο του οχήματος σας.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--epikoinonia section-->
+    <div class="contact" id="contact">
+
+
+        <div class="contact-cont">
+            <div class="info">
+                <h4>ΕΠΙΚΟΙΝΩΝΙΑ</h4>
+                <h4>2105749060 - 6980592207
+                </h4>
+                <h5>Αμφιλοχίας 1 & Καρκαβίτσα 10, στάση μετρό Ανθούπολη, Περιστέρι 12134, ΑΤΤΙΚΗΣ</h5>
+                <div class="social">
+                    <a href="https://www.facebook.com/fmakservice/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.e-peristeri.gr/Fmakservice" target="_blank"><i class="fal fa-map-marker-alt"></i></a>
+                    <a href="https://www.vrisko.gr/advdetails/75bj_15036bg2e1h7k7i0j30564b3_5_312j673546a5ck334i557d053bc45a7e" target="_blank"><i class="far fa-search"></i></a>
+                </div>
+            </div>
+
+            <div class="map">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.265862698363!2d23.688886315257786!3d38.01758100592561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a3a7f4a65f65%3A0xd2b234e9e57d1e61!2zRi1NQUsgU0VSVklDRSDOnM6xz4XPgc6_z4DOv8-NzrvOt8-CIM6GzrPOs861zrvOv8-CIM6VzrzOvC4!5e0!3m2!1sen!2sgr!4v1588444708160!5m2!1sen!2sgr"
+                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                      </iframe>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer>
+        <h5> Created by &copy;
+            <a href="http://www.mcodev.site/" target="_blank" style="color: black; text-decoration: none;">McO<span style="color: brown;">dev</span></a>
+        </h5>
+    </footer>
+
+</body>
+
+</html>
