@@ -172,6 +172,7 @@ button.pt-trigger {
     bottom: 0;
     width: 100vw;
     justify-content: space-between;
+    font-size: 16px;
 }
 
 @media screen and (max-width: 821px) {
@@ -350,6 +351,10 @@ span {
 
 .text {
     padding-top: 5px;
+}
+
+.main {
+    font-size: 22px;
 }
 
 .arrowcontainer {
