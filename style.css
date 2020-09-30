@@ -148,12 +148,14 @@ button.pt-trigger {
 }
 
 .basicinfo h1 {
+    font-size: 38px;
     letter-spacing: .3rem;
     padding-left: 10%;
     padding-right: 10%;
 }
 
 .basicinfo h3 {
+    font-size: 18px;
     letter-spacing: .1rem;
     padding-left: 10%;
     padding-right: 10%;
@@ -677,6 +679,7 @@ span {
     transform: translate(200vw) rotate(90deg);
     transition: 0.2s cubic-bezier(0.75, 0, 0.25, 1);
     margin: 8% 0 8% 0;
+    max-height: 90vh;
 }
 
 .nav__item {
@@ -916,14 +919,22 @@ main p {
 .resume {
     margin-top: 2rem;
     flex: 1;
-    max-height: 60vh;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     overflow: auto;
     justify-content: center;
 }
 
-@media screen and (max-width: 552px) {}
+@media screen and (max-height: 629px) {
+    .nav__list {
+        margin-top: 11vh;
+        margin-bottom: 7vh;
+    }
+    .download {
+        top: 7%;
+    }
+}
 
 .skills {
     padding-left: 5%;
@@ -949,6 +960,7 @@ main p {
 
 .history-tl-container {
     max-width: 30vw;
+    height: 55vh;
     padding-top: 10vh;
     display: block;
 }
