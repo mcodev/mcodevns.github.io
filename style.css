@@ -200,7 +200,7 @@ button.pt-trigger {
     cursor: pointer;
     pointer-events: none;
     padding-left: 2vw;
-    padding-top: .5rem;
+    padding-top: .3rem;
 }
 
 .follow:hover {
@@ -684,7 +684,6 @@ span {
     transform: translate(200vw) rotate(90deg);
     transition: 0.2s cubic-bezier(0.75, 0, 0.25, 1);
     margin: 8% 0 8% 0;
-    max-height: 90vh;
 }
 
 .nav__item {
@@ -923,8 +922,7 @@ main p {
 
 .resume {
     margin-top: 2rem;
-    flex: 1;
-    height: 100%;
+    height: 70vh;
     display: flex;
     flex-wrap: wrap;
     overflow: auto;
@@ -941,9 +939,17 @@ main p {
     }
 }
 
+@media screen and (min-width: 642px) {
+    .skills {
+        width: 60vw;
+    }
+    .history-tl-container {
+        width: 30vw;
+    }
+}
+
 .skills {
     padding-left: 5%;
-    width: 60vw;
 }
 
 .skills h3 {
@@ -964,8 +970,6 @@ main p {
 /* Timeline */
 
 .history-tl-container {
-    max-width: 30vw;
-    height: 55vh;
     padding-top: 10vh;
     display: block;
 }
