@@ -127,7 +127,9 @@ function percentage() {
     let arithmitis = lisReady.length - closed1.length;
     var final = parseInt((arithmitis / paronomastis) * 100);
 
-
+    document.getElementById("tasksRemaining").innerHTML = paronomastis - arithmitis;
+    document.getElementById("tasksCompleted").innerHTML = arithmitis;
+    document.getElementById("total").innerHTML = arithmitis + (paronomastis - arithmitis) ;
 
     if (arithmitis == 0 && paronomastis == 0) {
         final = 0;
@@ -156,3 +158,68 @@ function percentage() {
 
 }
 
+
+// Timer
+
+var timer = null;
+var duration = null;
+
+var interval = setInterval(function () {
+  
+    hours = parseInt((timer /3600)%24, 10);
+    minutes = parseInt((timer / 60)%60, 10);
+    seconds = parseInt(timer % 60, 10);
+
+    hours = hours < 10 ? "0" + hours : hours;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    displayH.textContent = hours;
+    displayS.textContent = seconds;
+    displayM.textContent = minutes;
+
+    if (--timer < 0) {
+        timer = null;
+        clearInterval(interval);
+    }
+}, 1000);
+
+function startTimer(duration, displayH, displayM , displayS) {
+
+    clearInterval(timer);    
+    timer = null;
+    
+    timer = duration, hours, minutes, seconds;
+
+    
+
+}
+
+function count(e) {
+    duration = e * 60 * 60;
+    displayH = document.querySelector('#hours');
+    displayM = document.querySelector('#minutes');
+    displayS = document.querySelector('#seconds');
+    startTimer(duration, displayH , displayM, displayS);
+};
+
+document.getElementById("CountBtn2").addEventListener("click", function(){ count(2);});
+document.getElementById("CountBtn4").addEventListener("click", function(){ count(4);});
+document.getElementById("CountBtn8").addEventListener("click", function(){ count(8);});
+
+// document.querySelector('#clock').addEventListener("click", function(){ 
+//     clearTimeout(0);
+//     clearInterval(timer);    
+//     timer = null;
+// });
+
+
+//Clock
+var today = new Date();
+
+var myVar=setInterval(function(){myTimer()},1000);
+
+function myTimer() {
+    var d = new Date();   
+    document.getElementById("date").innerHTML = d.toLocaleTimeString();
+}
