@@ -1,102 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mTasks</title>
-
     <link rel="stylesheet" href="app.css">
-
-
 </head>
-
 <body>
+    <div class="main">
 
-    <div class="mainContainer">
+        <div class="select"><button class="managerSelect leftBtn checked2" id="pm">Project Manager</button> <button class="managerSelect rightBtn" id="tm">Task Manager</button></div>
 
-        <div class="leftSide">
-
-            <div class="leftHeader">
-                <div class="webflow-style-input">
-                    <input type="text" placeholder="Add a task" id="taskInput"></input>
-                    <button type="button" class="btn" id="button" > <span id="fontButton">Add</span></button>
-                </div>
-            </div>
-
-            <div class="todo">
-
-            <div class="preTasks"> 
-                <ul id="myUL" class="tasks">
-
-
-                </ul>
-            </div> 
-                <h4 class="exp">Tasks</h4>
-            </div>
-
-        </div>
-
-        <div class="rightSide">
-
-            <div class="percentage">
-
-                <div class="progress">
-                    <div class="progress-done" data-done="0">
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="rightUp">
-
-                <div class="rightUpLeft">
-                    <h1 id="number">0%</h1>
-                    <div class="stats">
-                        <p>remaining : &nbsp;<span id="tasksRemaining" class="spans">0</span></p>            
-                        <p>completed : <span id="tasksCompleted" class="spans">0</span></p>
-                        <p>total : &nbsp;<span id="total" class="spans">0</span></p>
-                    </div>
-               
-                </div>
-                <div class="rightUpRight">
-                    <div class="clock">
-                        <p id="clock"><span id="hours">00</span> : <span id="minutes">00</span> : <span id="seconds">00</span></p>
-                    </div>
-                    <div class="timer">
-                        <div class="share-button">
-                            <span>Set Timer</span>
-                            <div class="group-container">
-                              <div class="multi-button skin3">
-                                <button id="CountBtn2">2h</button>
-                                <button id="CountBtn4">4h</button>
-                                <button id="CountBtn8">8h</button>
-                              </div>
-                            </div>
-                          </div>
+<!-- PROJECT MANAGER -->
+            <div class="projectManager" id="projectManager">
+                <div class="left">
+                    <div class="menu">
+                        <button class="btn checked">Overview</button>  <!-- icons--> 
+                        <button class="btn">Projects</button>
+                        <button class="btn">Tasks</button>
+                        <button class="btn">Export</button>
                     </div>
                 </div>
 
+                <div class="right">
+                    <div class="overview">
+
+                    </div>
+                    <div class="projects">
+
+                    </div>
+                    <div class="tasks">
+
+                    </div>
+                    <div class="export">
+
+                    </div>
+
+                </div>
             </div>
 
-            <div class="rightDown">
+<!-- TASK MANAGER -->
 
-                <div class="completed">
-                    <div class="preReady">
-                        <ul id="myReady">
+            <div class="taskManager" id="taskManager" style="display: none;">
+                <div class="taskLeft">
 
-                        </ul>
-                    </div>
-                    <h4 class="exp"><span id="date"></span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; Completed</h4>
+                <div class="input">
+                    <label for="inp" class="inp">
+                        <input type="text" id="taskInput"  placeholder="&nbsp;">
+                        <span class="label">create task</span>
+                        <span class="focus-bg"></span>
+                    </label>
                 </div>
 
-            </div>
-
-        </div>
-
+                    <div class="tasksView">
+                        <div class="tasksViewL">
+                            <p class="taskHeader">New tasks</p>
+                            <div class="preTasks "> 
+                                <ul id="myUL" class="tasks">
+                
+                
+                                </ul>
+                            </div> 
+                        </div>
+                        <div class="tasksViewR">
+                            <p class="taskHeader">Completed tasks</p>
+                            <div class="preReady">
+                                <ul id="myReady">
         
-        <script type="text/javascript" src="app.js"></script>
+                                </ul>
+                            </div>
+                        </div>
 
+
+                    </div>
+
+                </div>
+                <div class="taskRight">
+                    <div class="stats">
+                        <div class="remain dirCol">
+                            <p id="tasksRemaining" class="statNum">0</p>
+                            <p class="statTxt">remain</p>
+                        </div>
+                        <div class="complete dirCol">
+                            <p id="tasksCompleted" class="statNum">0</p>
+                            <p class="statTxt">complete</p>
+                        </div>
+                        <div class="total dirCol">
+                            <p id="total"class="statNum" >0</p>
+                            <p class="statTxt">total</p>
+                        </div>
+                    </div>
+                    <div class="taskProgress dirCol">
+                        <div class="detProgress"><p>Progress <span id="number">0%</span></p></div>
+                        <div class="progress">
+                            <div class="progress-done" data-done="0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clockClosure">
+      
+                
+                    
+                        <div class="time">
+                            <span class="hours"></span>
+                            <span class="colon">:</span>
+                            <span class="minutes"></span>
+                            <span class="colon" hidden>:</span>
+                            <span class="seconds" hidden></span>
+                        </div>
+                        
+
+                        <div class="date">
+
+                            <span class="day"></span>
+                            <span class="month"></span>
+                            <span class="year"></span>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+    </div>
+    <script src="app.js"></script>
 </body>
-
 </html>
