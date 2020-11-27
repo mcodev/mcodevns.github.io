@@ -110,21 +110,23 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    height: 90vh;
+    
 }
 
 /* Task manager CSS */
 
 .taskLeft{
 
-padding: 2rem 1rem 2rem 1rem;
-height: 93vh;
+padding: 2rem .6rem 2rem .6rem;
+height: 100%;
 width: 80%;
 }
 
 .taskRight{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.034), 0 6px 20px 0 rgba(0, 0, 0, 0.055);
     background-color: white;
-    height: 93vh;
+    height: 100vh;
     width: 20%;
     min-width: 300px;
     border-radius: 10px 0 0 10px;
@@ -175,7 +177,7 @@ width: 80%;
 .detProgress{
     color: rgb(65, 65, 65);
     font-size: 16px;
-    height: 50%;
+    min-height: 40%;
     padding-top: 13% ;
     word-spacing: 12.5vw;
     letter-spacing: .1rem;  
@@ -315,7 +317,7 @@ width: 80%;
   
   .tasksView{
     
-    height: 95%;
+    height: 93%;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -336,7 +338,9 @@ padding: 3rem 2rem;
     margin-bottom: 1rem;
 }
 
-
+.clockClosure{
+  height: 40%;
+}
 
 
 .preTasks{    
@@ -623,3 +627,4 @@ ul li.checked::before {
     }
   }
   
+ 

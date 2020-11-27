@@ -1,28 +1,3 @@
-// top manager selector
-let pm =document.getElementById("pm");
-let tm =document.getElementById("tm");
-
-var projectManager = document.getElementById("projectManager");
-var taskManager = document.getElementById("taskManager");
-
-
-pm.addEventListener("click",function (){
-    if (projectManager.style.display === "none") {
-        projectManager.style.display = "flex";
-        pm.classList.add("checked2");
-        tm.classList.remove("checked2");
-        taskManager.style.display = "none";
-      } 
-} );
-
-tm.addEventListener("click",function (){
-    if (taskManager.style.display === "none") {
-        taskManager.style.display = "flex";
-        tm.classList.add("checked2");
-        pm.classList.remove("checked2");
-        projectManager.style.display = "none";
-      }
-} );
 
 //CLock
 
