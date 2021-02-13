@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,15 @@
     <title>mTask</title>
     <link rel="shortcut icon" href="mainIcon.ico" type="image/x-icon">
     <style>
+        body {
+            cursor: default;
+        }
+        
         .mtaskwrap {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
-
         }
         
         .mtaskdown {
@@ -29,7 +33,6 @@
             font-size: 22px;
             font-weight: 500;
             color: white;
-            
             text-align: center;
         }
         
@@ -47,16 +50,17 @@
         }
     </style>
 </head>
+
 <body>
-    <div style="text-align: center;"> 
+    <div style="text-align: center;">
         <img src="mainIcon.png" alt="mtask" style="margin-top: 5%;">
         <h1 style="font-size:80px; letter-spacing: .9rem; color:rgb(80, 80, 80);">mTask</h1>
         <h3 style="font-size:20px; letter-spacing: .7rem; color:rgb(119, 112, 112);">Daily task manager for desktop</h3>
         <h4 style="letter-spacing: .3rem; color:rgb(119, 112, 112); margin-top:8%; margin-bottom:2%;">download now for:</h4>
     </div>
-    
+
     <div class="mtaskwrap">
-        
+
         <div class="mtaskdown" onclick=" download('files/mTask.dmg', 'mTask')">
             <p>mac</p>
         </div>
@@ -76,8 +80,9 @@
                     link.remove();
                 }
                 count += 1;
-}
+            }
         </script>
     </div>
 </body>
+
 </html>
